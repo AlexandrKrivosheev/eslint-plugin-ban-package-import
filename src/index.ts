@@ -1,0 +1,1 @@
+export { banDependencyImport } from "./banDependencyImport";
