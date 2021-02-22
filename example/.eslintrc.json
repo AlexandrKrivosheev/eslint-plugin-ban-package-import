@@ -1,0 +1,11 @@
+{
+  "plugins": ["ban-package-import"],
+  "rules": {
+    "ban-package-import/ban-package-import": [
+      2,
+      {
+        "packages": ["package-to-ban"]
+      }
+    ]
+  }
+}
