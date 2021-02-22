@@ -4,8 +4,7 @@
   "description": "Bans specified dependency import",
   "scripts": {
     "test": "jest",
-    "build": "tsc",
-    "postinstall": "npm run build"
+    "build": "tsc"
   },
   "main": "build/index.js",
   "author": "Oleksandr Kryvosheiev",
