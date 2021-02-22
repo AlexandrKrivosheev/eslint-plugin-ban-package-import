@@ -1,7 +1,7 @@
 {
-  "name": "eslint-plugin-ban-dependency-import",
+  "name": "eslint-plugin-ban-package-import",
   "version": "1.0.2",
-  "description": "Bans specified dependency import",
+  "description": "Bans package import",
   "scripts": {
     "test": "jest",
     "build": "tsc"
