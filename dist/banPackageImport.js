@@ -5,7 +5,7 @@ exports.banPackageImport = {
     meta: {
         type: "suggestion",
         messages: {
-            bannedPackage: "Package '{{ package }}' is not allowed",
+            bannedPackage: "Package import '{{ package }}' is not allowed",
         },
     },
     create: function (context) {
