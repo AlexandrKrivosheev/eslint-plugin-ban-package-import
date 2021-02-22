@@ -4,7 +4,8 @@
   "description": "Bans package import",
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "postinstall": "npm i && npm run build"
   },
   "main": "build/index.js",
   "author": "Oleksandr Kryvosheiev",
