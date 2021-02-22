@@ -31,9 +31,12 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
   "rules": {
-    "ban-package-import/ban-package-import": {
-      "packages": ["package-to-ban"]
-    }
+    "ban-package-import/ban-package-import": [
+      2,
+      {
+        "packages": ["package-to-ban"]
+      }
+    ]
   }
 }
 ```
