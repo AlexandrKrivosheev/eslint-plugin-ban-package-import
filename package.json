@@ -2,6 +2,11 @@
   "name": "eslint-plugin-ban-package-import",
   "version": "1.0.9",
   "description": "Bans package import",
+  "homepage": "https://github.com/AlexandrKrivosheev/eslint-plugin-ban-package-import#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexandrKrivosheev/eslint-plugin-ban-package-import.git"
+  },
   "scripts": {
     "test": "jest",
     "build": "tsc"
