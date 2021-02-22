@@ -1,5 +1,5 @@
 import { RuleTester } from "eslint";
-import { banDependencyImport } from "../banDependencyImport";
+import { banPackageImport } from "../banPackageImport";
 
 const testCase = (
   code: string,
@@ -7,14 +7,14 @@ const testCase = (
 ) => ({
   ...settings,
   code,
-  options: [{ dependencies: ["bannedDep"] }],
+  options: [{ packages: ["bannedDep"] }],
 });
 
 const ruleTester = new RuleTester({
   parserOptions: { sourceType: "module", ecmaVersion: 2015 },
 });
 
-ruleTester.run("ban-dependency-import", banDependencyImport, {
+ruleTester.run("ban-package-import", banPackageImport, {
   valid: [
     testCase("var allowedDep = require('allowedDep')"),
     testCase("log()"),
@@ -25,21 +25,21 @@ ruleTester.run("ban-dependency-import", banDependencyImport, {
     testCase("var bannedDep = require('bannedDep')", {
       errors: [
         {
-          messageId: "bannedDependency",
+          messageId: "bannedPackage",
         },
       ],
     }),
     testCase("import bannedDep from 'bannedDep'", {
       errors: [
         {
-          messageId: "bannedDependency",
+          messageId: "bannedPackage",
         },
       ],
     }),
     testCase("import { bannedDep } from 'bannedDep'", {
       errors: [
         {
-          messageId: "bannedDependency",
+          messageId: "bannedPackage",
         },
       ],
       parser: require.resolve("@typescript-eslint/parser"),

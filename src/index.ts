@@ -1,1 +1,1 @@
-export { banDependencyImport } from "./banDependencyImport";
+export { banPackageImport } from "./banPackageImport";

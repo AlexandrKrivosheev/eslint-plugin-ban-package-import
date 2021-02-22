@@ -1,10 +1,13 @@
 {
-  "name": "eslint-ban-dependency-import",
+  "name": "eslint-plugin-ban-dependency-import",
   "version": "1.0.0",
-  "description": "Bans dependency from being import",
+  "description": "Bans specified dependency import",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc",
+    "postinstall": "npm run build"
   },
+  "main": "build/index.js",
   "author": "Oleksandr Kryvosheiev",
   "license": "MIT",
   "jest": {
