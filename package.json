@@ -6,7 +6,7 @@
     "test": "jest",
     "build": "tsc"
   },
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "author": "Oleksandr Kryvosheiev",
   "license": "MIT",
   "jest": {
