@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ban-package-import",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Bans package import",
   "scripts": {
     "test": "jest",
